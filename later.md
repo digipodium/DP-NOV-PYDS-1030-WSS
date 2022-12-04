@@ -1,0 +1,2 @@
+- a function to find if a string is capitalized
+- a function to check if a string contains alphabets or spaces
