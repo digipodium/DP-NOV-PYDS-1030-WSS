@@ -1,6 +1,6 @@
 # creating a dictionary
 a = {'Name': 'Zara', 'Age': 7, 'Class': 'First'}
-print(a)
+p5r4*rint(a)
 
 # getting all the keys from the dictionary
 print(a.keys()) # use list(a.keys()) to display as list
@@ -21,6 +21,7 @@ b = {
 from pprint import pp
 pp(b)
 
+# 
 # accessing a value from a dict
 print(a['Name'])
 print(a['Class'])
