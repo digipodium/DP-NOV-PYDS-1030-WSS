@@ -13,11 +13,11 @@ inv.append({
     'Cost Per Item': 50,
     'Tax %': 1
 })
-print(inv)
+# print(inv)
 
-def bill(data):
+def bill(order):
     total_bill = 0
-    for entry in data:
+    for entry in order:
         id = entry[0]
         qty = entry[1]
         total_bill += calculate(id, qty)
@@ -31,5 +31,10 @@ def calculate(id, qty):
             return amt + tax
     return 0
 
-total = bill([[16521, 10], [16522, 1]])
+# taking input
+n = int(input('>>>'))
+orders = [list(map(int,input('>').split())) for i in range(n)]
+print(orders)
+
+total = bill(orders)
 print(f'Amount = {total}')
